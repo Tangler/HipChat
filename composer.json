@@ -1,0 +1,22 @@
+{
+    "name": "tangler/hipchat",
+    "description": "HipChat Module for Tangler",
+    "homepage": "http://www.github.com/tangler/hipchat",
+    "keywords": ["php", "tangler", "hipchat"],
+    "type": "library",
+    "minimum-stability": "dev" ,
+    "require": {
+        "symfony/console": "2.4.*@dev",
+        "phpunit/phpunit": "3.7.*@dev",
+        "hipchat/hipchat-php": "dev-master",
+        "tangler/tangler": "dev-master"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Tangler\\": "src/"
+        }
+    }
+}
