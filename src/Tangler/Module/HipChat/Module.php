@@ -12,13 +12,14 @@ class Module extends AbstractModule implements ModuleInterface
         $this->setKey('hipchat');
         $this->setLabel('HipChat module');
         $this->setDescription('This is the HipChat Tangler module');
+        $this->setImageUrl('http://osx.wdfiles.com/local--files/icon:hipchaticon/HipChatIcon.png');
 
         $this->setTriggers(array(
-            new \Tangler\Module\File\NewMessageTrigger()
+            new \Tangler\Module\HipChat\NewMessageTrigger()
         ));
 
         $this->setActions(array(
-            new \Tangler\Module\File\SendMessageAction()
+            new \Tangler\Module\HipChat\SendMessageAction()
         ));
     }
 }

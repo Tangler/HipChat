@@ -5,11 +5,12 @@ namespace Tangler\Module\HipChat;
 use Tangler\Core\Interfaces\TriggerInterface;
 use Tangler\Core\AbstractTrigger;
 
-class NewFileTrigger extends AbstractTrigger implements TriggerInterface
+class NewMessageTrigger extends AbstractTrigger implements TriggerInterface
 {
     public function Init()
     {
-        $this->setKey('new_message§');
+        $this->setKey('new_message');
+        $this->setStatus('TODO');
         $this->setLabel('New HipChat Message trigger');
         $this->setDescription('This monitors a room for new messages');
 
